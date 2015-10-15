@@ -1,0 +1,75 @@
+/* 	The header element should have a 1px border. Color, you pick = DONE
+
+    1. Convert the ul in the navigation element into a series of horizontal links with # as the href value, without a bullets, centered vertically, and have some space between them horizontally.
+    2. Ensure that the navigation is semantically marked as such (i.e. wrap it in the correct HTML tag) == DONE*/
+
+		header {
+			border: 1px solid black;
+		}
+
+		nav ul {
+			padding: 20px;
+			display: block;
+			margin: auto; 
+		/*	text-align: center;*/
+		}
+
+		nav ul li{
+			list-style-type: none;
+			display: inline;
+		}
+
+
+/*  1. Any text in an element with class "disabled" should be colored grey, unless it is inside an anchor tag. If inside an anchor, it should be colored purple.
+      2. Any text inside an element with a class of "active" should be colored yellow.
+      3. Section elements should be contained within an article element.
+			DONE
+     */
+
+	.disabled{
+		color: gray;
+	}
+
+	a .disabled {
+		color: purple;
+	}
+
+	.active {
+		color: yellow;
+	}
+
+
+
+/*    1. Make the "I'm red" text colored red
+      2. Make the "I'm blue" text colored blue
+      3. The sibling h4 of the red element should have a background color of red
+      4. The sibling h4 of the blue element should have background color of blue
+      5. An h4 that is a direct child of grandparent should have a 1px border with rounded corners.
+      DONE
+*/
+
+		.parent div:first-child{
+			color: red;
+		}
+
+		.parent div:nth-of-type(2){
+			color: blue;
+		}
+
+		.parent div h4:first-of-type{
+			background-color: red;
+		}
+
+		.parent div h4:last-of-type{
+			background-color: blue;
+		}
+
+		.grandparent > h4{
+			border: 1px solid black;
+			border-radius: 10px; 
+		}
+
+
+
+
+
